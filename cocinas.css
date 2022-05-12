@@ -1,0 +1,83 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: beige;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: brown;
+}
+.contenedor img{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+}
+h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: verdana;
+    text-align: center;
+}
+h2{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.rusticas img{
+    margin: auto;
+    display: block;
+    width: 360px;
+    height: 230px;
+}
+.modernas img{
+    margin: auto;
+    display: block;
+    width: 410px;
+    height: 227px;
+}
+.submenu1{
+    position: absolute;
+    background: #092327;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2,5s;
+}
+.submenu1 > li{
+    float: left;
+}
+.submenu1 li a{
+    display: block;
+    padding: 15px;
+    color: #ffff;
+    text-decoration: none;
+    transition: opacity 2.5s;
+}
+.menu li:hover .submenu1{
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: cadetblue;
+    text-align: justify;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: brown;
+}
+.contenedor img{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: left;
+    display: block;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+}
+h1{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+h3{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.hab img{
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 200px;
+}
+.submenu1{
+    position: absolute;
+    background: #092327;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 2,5s;
+}
+.submenu1 > li{
+    float: left;
+}
+.submenu1 li a{
+    display: block;
+    padding: 15px;
+    color: #ffff;
+    text-decoration: none;
+    transition: opacity 2.5s;
+}
+.menu li:hover .submenu1{
+    visibility: visible;
+    opacity: 1;
+}
